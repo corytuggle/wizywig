@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #826f98 !important;
+    margin: 0;
+}
+
+#page {
+    height: 100vh
+}
+
+/* Header Styling */
+.logo {
+    height: 5vmin;
+    pointer-events: none;
+    padding-right: 20px;
+}
+
+.header {
+    height: 7vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    font-size: 2em;
+}
+
+.header a {
+    color: inherit;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Progress Bar */
+#progress-bar {
+    border-radius: 30px;
+    width: 99vmin;
+    height: 3em;
+    background-color: #848ea9;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .75);
+    /* box-shadow: 0 0 50px #375397; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 10%;
+    z-index: 1;
+}
+
+#progress-bar::before {
+    content: attr(data-label);
+    border-radius: 1em;
+    width: calc((var(--width, 0) / 3) * 3%);
+    min-width: 2em;
+    max-width: calc(100% - 1em);
+    background-color: #375397;
+    /* box-shadow: 0 0 40px #375397;  */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: .5em;
+    top: .5em;
+    bottom: .5em;
+    padding: 1em;
+}
+
+/* Main container */
+#container {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100vmin;
+    height: 80vh;
+    background-color: #a59cba;
+    box-shadow: 0 40px 40px rgba(20, 20, 20, 0.75);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 53%;
+    padding: 30px;
+    position: absolute;
+}
+
+/* Toolbar */
+#container .ql-toolbar.ql-snow {
+    border: 2px solid black;
+    border-radius: 10px 10px 0 0;
+    background-color: #f6f7f5;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    z-index: 1;
+}
+
+/* Text Editor */
+#container .ql-editor {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    height: 60vh;
+    background-color: #375397;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    color: #f6f7f5;
+    margin-top: 0px;
+    padding: 20px;
+    resize: none;
+}
+
+#container .ql-container.ql-snow {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Word Counter */
+#counter {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 94vmin;
+    background-color: #375397;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    color: #f6f7f5;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 88%;
+    padding: 7px;
+    position: absolute;
+    text-align: center;
+}
+
+@page {
+    margin: 1in;
+}
+
+@media print {
+    body {
+        background: none;
+    }
+
+    .container .ql-editor {
+        width: 6.5in;
+        height: 9in;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        align-self: flex-start;
+    }
+
+    .container .ql-toolbar.ql-snow {
+        display: none;
+    }
+}
+
+/* The below are all corrections needed to style over the MUI default styles */
+/* Assigns correct font size to "WIZyWIG" in NavDrawer */
+.MuiTypography-root.css-2ulfj5-MuiTypography-root {
+    font-size: 2em;
+}
+/* Color corrects the LeftDrawer */
+.MuiPaper-root.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+    background-color: #333;
+    color: white;
+}
+/* Color corrects the Icons in all drawers */
+.MuiListItemIcon-root.css-cveggr-MuiListItemIcon-root {
+    color: inherit;
+}
+.MuiSvgIcon-root.css-i4bv87-MuiSvgIcon-root {
+    color: white;
+}
+/* Color corrects the CompDrawer */
+.MuiPaper-root.css-18sg6k4-MuiPaper-root-MuiDrawer-paper {
+    background-color: #333;
+    color: inherit;
+}
+/* Corrects the width of the CompDrawer so it doesn't cover the NavDrawer */
+.MuiPaper-root.css-f6dazs-MuiPaper-root-MuiAppBar-root {
+    width: 20%;
+}
+.MuiPaper-root.css-15p6khp-MuiPaper-root-MuiAppBar-root {
+    width: 20%;
+}
