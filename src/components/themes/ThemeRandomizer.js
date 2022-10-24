@@ -8,7 +8,6 @@ const getTheme = () => {
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send(data)
-
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
             console.log(xhr.status);

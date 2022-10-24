@@ -4,7 +4,7 @@ import {
     Typography,
     IconButton,
 } from "@mui/material";
-import { ChevronRight, LoginRounded, LogoutRounded } from "@mui/icons-material";
+import { ChevronRight } from "@mui/icons-material";
 import { useState } from 'react';
 
 export default function AboutDrawer() {
@@ -24,8 +24,7 @@ export default function AboutDrawer() {
                         WIZyWIG
                     </Typography>
                     <Typography component='div'>
-                        <br />
-                        <strong>About Us:</strong><br /><br />
+                        <br /><strong>About Us:</strong><br /><br />
                         WIZyWIG gets its name from the acronym "wysiwyg",
                         which is commonly pronounced as<br/>"wiz-ee-wig", and stands
                         for "What you see is what you get". It has become

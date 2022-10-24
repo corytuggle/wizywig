@@ -1,13 +1,12 @@
 import React from 'react'
 import Header from '../Header';
-
-import PostCollection from '../PostCollection';
+import PostCRUD from '../PostCRUD';
 
 export default function Dashboard() {
   return (
     <div>
         <Header />
-        <PostCollection />
+        <PostCRUD />
     </div>
   )
 }

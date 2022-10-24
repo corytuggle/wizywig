@@ -1,7 +1,8 @@
-import { useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
-// import $ from 'jquery';
+import { db } from '../FirebaseConfig';
+import { collection, addDoc } from 'firebase/firestore';
 
 class Counter {
   constructor(quill, options) {
@@ -42,13 +43,9 @@ const toolbarOptions = [[
   "blockquote", "code-block", "clean"
 ]];
 
-// $("#body").on("submit", function () {
-//   $("#hiddenArea").val($("#container .ql-editor"))
-//   console.log()
-//   console.log('hi')
-// })
 
 export default function TextEditor() {
+
   const wrapperRef = useCallback(wrapper => {
     if (wrapper == null) return
     wrapper.innerHTML = ""
@@ -64,25 +61,19 @@ export default function TextEditor() {
         }
       }
     })
-    var form = texteditor.innerHTML
-    console.log(form)
+    var content = texteditor.innerHTML
+    console.log(content)
     console.log(texteditor)
     texteditor.on('text-change', function () {
       var text = texteditor.getText();
       console.log(text)
-
     })
   }, [])
 
   return (
     <>
-      {/* <form method="post" id='body'> */}
-        <div id="container" ref={wrapperRef}></div>
-        <div id="counter"></div>
-        {/* <textarea name='text' id="hiddenArea"></textarea> */}
-        {/* <input type='submit' value='Save' /> */}
-      {/* </form> */}
+      <div id="container" ref={wrapperRef}></div>
+      <div id="counter"></div>
     </>
   )
 };
-

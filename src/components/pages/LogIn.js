@@ -50,7 +50,7 @@ export default function LogIn() {
       <div>
         <h3> Register User </h3>
         <input placeholder='email...' onChange={(event) => { setRegisterEmail(event.target.value); }} />
-        <input placeholder='password...' onChange={(event) => { setRegisterPassword(event.target.value); }} />
+        <input placeholder='password...' onChange={(event) => { setRegisterPassword(event.target.value); }} />AuthRoute
         <button onClick={register}> Create User </button>
       </div>
 

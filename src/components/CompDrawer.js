@@ -11,9 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import RandomTheme from './themes/ThemeRandomizer';
-import PostAddition from './PostAddition';
 import { Link } from 'react-router-dom';
-import { color } from '@mui/system';
 
 const drawerWidth = 300;
 
@@ -127,9 +125,6 @@ export default function CompDrawer() {
                 </DrawerHeader>
                 <Link style={{color: 'white'}} to="/dashboard" >Dashboard</Link>
                 <RandomTheme />
-                <PostAddition />
-                {/* <ExportPDF /> */}
-
             </Drawer>
         </Box>
     );
