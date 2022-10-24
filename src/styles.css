@@ -163,27 +163,37 @@ body {
 .MuiTypography-root.css-2ulfj5-MuiTypography-root {
     font-size: 2em;
 }
+
 /* Color corrects the LeftDrawer */
 .MuiPaper-root.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
     background-color: #333;
     color: white;
 }
+
 /* Color corrects the Icons in all drawers */
 .MuiListItemIcon-root.css-cveggr-MuiListItemIcon-root {
     color: inherit;
 }
+
 .MuiSvgIcon-root.css-i4bv87-MuiSvgIcon-root {
     color: white;
 }
+
 /* Color corrects the CompDrawer */
 .MuiPaper-root.css-18sg6k4-MuiPaper-root-MuiDrawer-paper {
     background-color: #333;
     color: inherit;
 }
+
 /* Corrects the width of the CompDrawer so it doesn't cover the NavDrawer */
 .MuiPaper-root.css-f6dazs-MuiPaper-root-MuiAppBar-root {
     width: 20%;
 }
+
 .MuiPaper-root.css-15p6khp-MuiPaper-root-MuiAppBar-root {
     width: 20%;
+}
+
+textarea {
+    display: none;
 }

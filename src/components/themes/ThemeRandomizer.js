@@ -16,7 +16,7 @@ const getTheme = () => {
             var palette = JSON.parse(xhr.responseText).result;
             // console.log(palette);
             var themeZero = palette[0];
-            var themeOne = palette[1];
+            // var themeOne = palette[1];
             var themeTwo = palette[2];
             var themeThree = palette[3];
             var themeFour = palette[4];
