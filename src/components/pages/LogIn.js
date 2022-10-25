@@ -72,6 +72,10 @@ export default function LogIn() {
         </div>
 
         <div className='login-page-container'>
+          <div className='signout-header-container'>
+            <p> User Logged In: {user?.email}</p>
+            
+          </div>
           <button id='signout-button' onClick={logout}> Sign Out </button>
         </div>
       </div>

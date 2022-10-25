@@ -30,6 +30,22 @@
 }
 
 /* Buttons on Composition Drawer */
+#dashboard-button {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #375397;
+    color: #f6f7f5;
+}
+
+#dashboard-button:hover {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .55);
+}
+
 #theme-button-container {
     display: grid;
     justify-content: center;
@@ -46,11 +62,70 @@
     border-radius: 10px;
 }
 
-.theme-button:hover {
-    box-shadow: 0 0 15px 10px rgba(255, 255, 255, .75);
+#wizywig-home:hover {
+    background-color: #826F98;
+    color: white;
+    border: 10px solid #375397;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 10px rgba(165, 156, 186, .75);
+}
+
+#ocean-spray:hover {
+    background-color: #5EB3DC;
+    color: black;
+    border: 10px solid #104666;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 10px rgba(94, 179, 220, .75);
+}
+
+#pumpkin-patch:hover {
+    background-color: #F47F38;
+    color: white;
+    border: 10px solid #5C7753;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 10px rgba(244, 127, 56, .75);
+}
+
+#rock-quarry:hover {
+    background-color: #89938B;
+    color: white;
+    border: 10px solid #59544B;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 10px rgba(137, 147, 139, .75);
+}
+
+#fruit-salad:hover {
+    background-color: #C23D43;
+    color: white;
+    border: 10px solid #3B7855;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 10px rgba(194, 61, 67, .75);
+}
+
+#wild-flowers:hover {
+    background-color: #2D1838;
+    color: white;
+    border: 10px solid #7AB598;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 10px rgba(173, 101, 142, .75);
 }
 
 #random-theme-container {
     display: grid;
     padding: 0 15px;
+}
+    
+#random-generator:hover {
+    background: linear-gradient(25deg, red, orange, yellow, green, blue, indigo, violet, red);
+    color: white;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, .5);
+}
+
+#comp-drawer-text {
+    color: white;
+    padding: 16px;
+}
+ 
+#comp-drawer-text a {
+    color: white;
 }

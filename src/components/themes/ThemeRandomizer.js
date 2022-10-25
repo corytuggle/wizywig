@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Typography } from '@mui/material';
 
 const getTheme = () => {
   var url = "http://colormind.io/api/";
@@ -64,8 +65,19 @@ const getTheme = () => {
 
 export default function RandomTheme() {
   return (
-    <div id='random-theme-container'>
-      <button className='theme-button' id='random-generator' onClick={getTheme}>Random Theme</button>
-    </div>
+    <>
+      <div id='random-theme-container'>
+        <button className='theme-button' id='random-generator' onClick={getTheme}>Random Theme</button>
+      </div>
+      <div id='comp-drawer-text'>
+        <Typography><br/>*Disclaimer*<br/><br/>
+          The Random Theme selector pulls theme variables from the<br/>
+          <a href='http://colormind.io/api-access/'>Colormind API</a>.<br/><br/>
+          This will neither be stored for future use, nor can WIZyWIG guarantee
+          its legibility due to the random nature of the contrast between the 
+          text editor's background color and its font color.
+        </Typography>
+      </div>
+    </>
   )
 }
