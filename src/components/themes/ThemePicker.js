@@ -10,8 +10,6 @@ export const ThemePicker = (event) => {
 
   var pageBg = document.getElementById("page");
   var editorBox = document.getElementById("container");
-  // var progressBar = document.getElementById("progress-bar");
-  // var progressBarData = document.getElementById("progress-bar").getElementsByClassName("probar::before")[0];
   var editorBg = document.getElementById("container").getElementsByClassName("ql-editor")[0];
   var editorTxtCol = document.getElementById("container").getElementsByClassName("ql-editor")[0];
   var countBG = document.getElementById("counter");
@@ -21,8 +19,6 @@ export const ThemePicker = (event) => {
   if (id === 'wizywig-home') {
     pageBg.style.backgroundColor = "#" + wizywigHome[0];
     editorBox.style.backgroundColor = "#" + wizywigHome[1];
-    // progressBar.style.backgroundColor = "#" + wizywigHome[0];
-    // progressBarData.style.backgroundColor = "#" + wizywigHome[0];
     editorBg.style.backgroundColor = "#" + wizywigHome[2];
     countBG.style.backgroundColor = "#" + wizywigHome[2];
     editorTxtCol.style.color = "#" + wizywigHome[3];
@@ -32,8 +28,6 @@ export const ThemePicker = (event) => {
   else if (id === 'ocean-spray') {
     pageBg.style.backgroundColor = "#" + oceanSpray[0];
     editorBox.style.backgroundColor = "#" + oceanSpray[1];
-    // progressBar.style.backgroundColor = "#" + oceanSpray[0];
-    // progressBarData.style.backgroundColor = "#" + oceanSpray[0];
     editorBg.style.backgroundColor = "#" + oceanSpray[2];
     countBG.style.backgroundColor = "#" + oceanSpray[2];
     editorTxtCol.style.color = "#" + oceanSpray[3];
@@ -42,8 +36,6 @@ export const ThemePicker = (event) => {
   else if (id === 'pumpkin-patch') {
     pageBg.style.backgroundColor = "#" + pumpkinPatch[0];
     editorBox.style.backgroundColor = "#" + pumpkinPatch[1];
-    // progressBar.style.backgroundColor = "#" + pumpkinPatch[0];
-    // progressBarData.style.backgroundColor = "#" + pumpkinPatch[0];
     editorBg.style.backgroundColor = "#" + pumpkinPatch[2];
     countBG.style.backgroundColor = "#" + pumpkinPatch[2];
     editorTxtCol.style.color = "#" + pumpkinPatch[3];
@@ -52,8 +44,6 @@ export const ThemePicker = (event) => {
   else if (id === 'rock-quarry') {
     pageBg.style.backgroundColor = "#" + rockQuarry[0];
     editorBox.style.backgroundColor = "#" + rockQuarry[1];
-    // progressBar.style.backgroundColor = "#" + rockQuarry[0];
-    // progressBarData.style.backgroundColor = "#" + rockQuarry[0];
     editorBg.style.backgroundColor = "#" + rockQuarry[2];
     countBG.style.backgroundColor = "#" + rockQuarry[2];
     editorTxtCol.style.color = "#" + rockQuarry[3];
@@ -62,8 +52,6 @@ export const ThemePicker = (event) => {
   else if (id === 'fruit-salad') {
     pageBg.style.backgroundColor = "#" + fruitSalad[0];
     editorBox.style.backgroundColor = "#" + fruitSalad[1];
-    // progressBar.style.backgroundColor = "#" + fruitSalad[0];
-    // progressBarData.style.backgroundColor = "#" + fruitSalad[0];
     editorBg.style.backgroundColor = "#" + fruitSalad[2];
     countBG.style.backgroundColor = "#" + fruitSalad[2];
     editorTxtCol.style.color = "#" + fruitSalad[3];
@@ -72,8 +60,6 @@ export const ThemePicker = (event) => {
   else if (id === 'wild-flowers') {
     pageBg.style.backgroundColor = "#" + wildFlowers[0];
     editorBox.style.backgroundColor = "#" + wildFlowers[1];
-    // progressBar.style.backgroundColor = "#" + wildFlowers[0];
-    // progressBarData.style.backgroundColor = "#" + wildFlowers[0];
     editorBg.style.backgroundColor = "#" + wildFlowers[2];
     countBG.style.backgroundColor = "#" + wildFlowers[2];
     editorTxtCol.style.color = "#" + wildFlowers[3];

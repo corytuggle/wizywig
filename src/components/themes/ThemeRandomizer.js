@@ -29,8 +29,6 @@ const getTheme = () => {
 
       var pageBg = document.getElementById("page");
       var editorBox = document.getElementById("container");
-      // var progressBar = document.getElementById("progress-bar");
-      // var progressBarData = document.getElementById("progress-bar").getElementsByClassName("probar::before")[0];
       var editorBg = document.getElementById("container").getElementsByClassName("ql-editor")[0];
       var editorTxtCol = document.getElementById("container").getElementsByClassName("ql-editor")[0];
       var countBG = document.getElementById("counter");
@@ -41,12 +39,6 @@ const getTheme = () => {
 
       editorBox.style.backgroundColor =
         "rgb(" + themeTwo[0] + ", " + themeTwo[1] + ", " + themeTwo[2] + ")";
-
-      // progressBar.style.backgroundColor =
-      //     "rgb(" + themeOne[0] + ", " + themeOne[1] + ", " + themeOne[2] + ")";
-
-      // progressBarData.style.backgroundColor =
-      //     "rgb(" + themeFour[0] + ", " + themeFour[1] + ", " + themeFour[2] + ")";
 
       editorBg.style.backgroundColor =
         "rgb(" + themeFour[0] + ", " + themeFour[1] + ", " + themeFour[2] + ")";

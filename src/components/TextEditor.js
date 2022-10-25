@@ -60,15 +60,6 @@ export default function TextEditor() {
         }
       }
     })
-    var content = texteditor.innerHTML
-    texteditor.on('text-change', function () {
-      var text = texteditor.getText();
-      texteditor.innerText = text.split(/\s+/).length
-      var wordCount = texteditor.innerText
-      console.log(wordCount)
-      document.getElementById('progbar').innerText = wordCount
-    })
-
   }, [])
 
   return (

@@ -125,6 +125,7 @@ export default function CompDrawer() {
             {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </DrawerHeader>
+        
         <Link to="/dashboard"><button id='dashboard-button'>Dashboard</button></Link>
         <ThemeOptions />
         <RandomTheme />

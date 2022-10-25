@@ -12,7 +12,6 @@ export default function AboutDrawer() {
     <>
       <IconButton
         size='large'
-        aria-label='logo'
         onClick={() => setIsDrawerOpen(true)}
       >
         <ChevronRight />
