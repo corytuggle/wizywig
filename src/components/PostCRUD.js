@@ -26,7 +26,7 @@ export default function PostCRUD() {
   }
 
   const refresh = () => {
-    setTimeout(function(){window.location.reload();},10);
+    setTimeout(function () { window.location.reload(); }, 10);
   }
 
   useEffect(() => {
@@ -59,8 +59,7 @@ export default function PostCRUD() {
                 <input id="title-update-dashboard" placeholder="Title..." onChange={(event) => { setNewTitle(event.target.value) }} />
                 <textarea id="body-update-dashboard" placeholder="Body..." onChange={(event) => { setNewBody(event.target.value) }} />
                 <button className='post-update' onClick={updatePost} onSubmit={refresh}>Update Post</button>
-                <button className='post-delete' 
-                onClick={() => {deletePost(post.id)}}
+                <button className='post-delete' onClick={() => { deletePost(post.id) }}
                 >Delete Post</button>
               </div>
             </div>;
@@ -70,5 +69,3 @@ export default function PostCRUD() {
     </>
   )
 }
-
-

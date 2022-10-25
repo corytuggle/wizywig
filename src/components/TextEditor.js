@@ -1,8 +1,8 @@
-import { useState, useCallback } from 'react';
+import { useCallback } from 'react';
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
-import { db } from '../FirebaseConfig';
-import { collection, addDoc } from 'firebase/firestore';
+
+import '../css/editor.css';
 
 class Counter {
   constructor(quill, options) {
@@ -43,7 +43,6 @@ const toolbarOptions = [[
   "blockquote", "code-block", "clean"
 ]];
 
-
 export default function TextEditor() {
 
   const wrapperRef = useCallback(wrapper => {
@@ -62,18 +61,23 @@ export default function TextEditor() {
       }
     })
     var content = texteditor.innerHTML
-    console.log(content)
-    console.log(texteditor)
     texteditor.on('text-change', function () {
       var text = texteditor.getText();
-      console.log(text)
+      texteditor.innerText = text.split(/\s+/).length
+      var wordCount = texteditor.innerText
+      console.log(wordCount)
+      document.getElementById('progbar').innerText = wordCount
     })
+
   }, [])
 
   return (
     <>
       <div id="container" ref={wrapperRef}></div>
       <div id="counter"></div>
+      <div className="progbar-container">
+
+      </div>
     </>
   )
 };

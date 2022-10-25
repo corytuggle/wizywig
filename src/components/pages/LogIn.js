@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
-import { 
+import {
   createUserWithEmailAndPassword,
-  onAuthStateChanged, 
-  signInWithEmailAndPassword, 
-  signOut 
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signOut
 } from 'firebase/auth';
 import { auth } from '../../FirebaseConfig';
 
 import Header from '../Header'
+import '../../css/login.css'
 
 
 export default function LogIn() {
@@ -47,25 +48,32 @@ export default function LogIn() {
   return (
     <div>
       <Header />
-      <div>
-        <h3> Register User </h3>
-        <input placeholder='email...' onChange={(event) => { setRegisterEmail(event.target.value); }} />
-        <input placeholder='password...' onChange={(event) => { setRegisterPassword(event.target.value); }} />AuthRoute
-        <button onClick={register}> Create User </button>
-      </div>
+      <div id='login-page'>
+        <div className='login-page-container'>
+          <div className='header-container'>
+            <p> Register User </p>
+          </div>
+          <div className='input-containers'>
+            <input placeholder='Email...' onChange={(event) => { setRegisterEmail(event.target.value); }} />
+            <input placeholder='Password...' onChange={(event) => { setRegisterPassword(event.target.value); }} />
+            <button className='login-page-button' onClick={register}> Create User </button>
+          </div>
+        </div>
 
-      <div>
-        <h3> Login </h3>
-        <input placeholder='email...' onChange={(event) => { setLoginEmail(event.target.value); }} />
-        <input placeholder='password...' onChange={(event) => { setLoginPassword(event.target.value); }} />
-        <button onClick={login}> Login </button>
-      </div>
+        <div className='login-page-container'>
+          <div className='header-container'>
+            <p> Login </p>
+          </div>
+          <div className='input-containers'>
+            <input placeholder='Email...' onChange={(event) => { setLoginEmail(event.target.value); }} />
+            <input placeholder='Password...' onChange={(event) => { setLoginPassword(event.target.value); }} />
+            <button className='login-page-button' onClick={login}> Login </button>
+          </div>
+        </div>
 
-      <div>
-        <h3> User Email: </h3>
-        {user?.email}
-
-        <button onClick={logout}> Sign Out </button>
+        <div className='login-page-container'>
+          <button id='signout-button' onClick={logout}> Sign Out </button>
+        </div>
       </div>
     </div>
   )

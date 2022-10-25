@@ -4,7 +4,6 @@ import Header from '../Header';
 import AboutDrawer from '../AboutDrawer';
 import CompDrawer from '../CompDrawer';
 import TextEditor from '../TextEditor';
-import Progress from '../ProgressBar';
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <AboutDrawer />
       <CompDrawer />
       <TextEditor />
-      {/* <Progress /> */}
     </div>
   )
 }

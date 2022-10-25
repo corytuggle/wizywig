@@ -1,0 +1,122 @@
+/* Dashboard */
+
+/* Input area */
+#input-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+    background-color: #a59cba;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+#title-input-dashboard {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    font-size: large;
+    padding: 15px;
+    /* margin: auto; */
+    margin-top: 20px;
+    margin-left: 5%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+}
+
+#body-input-dashboard {
+    border: 2px solid black;
+    border-radius: 10px 10px 0 10px;
+    width: 90%;
+    height: 100px;
+    align-self: center;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 5%;
+    padding: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+#submit-dashboard {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #375397;
+    color: #f6f7f5;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-bottom: 25px;
+    width: 90%;
+    height: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+
+/* Posts Library */
+#post-wrapper {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 360px 360px 360px 360px;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.post-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 30px 20px rgba(20, 20, 20, 0.75);
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+.post-title {
+    border-bottom: 1px solid black;
+    border-radius: 8px 8px 0 0;
+    margin: 0;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: #375397;
+    overflow: auto;
+    font-size: x-large;
+}
+
+.post-body {
+    padding: 10px 15px;
+    background-color: #f6f7f5;
+    height: 240px;
+    margin-top: 0px;
+    overflow: auto;
+    font-size: large;
+}
+
+p {
+    margin: 0;
+}
+
+#submit-container {
+    border: 2px solid black;
+}
+
+.update-delete-container {
+    display: grid;
+    width: 100%;
+}
+
+.post-update {
+    background-color:#375397;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.post-delete {
+    border: 1px transparent black;
+    border-radius: 0 0 10px 10px;
+    background-color: #333;
+    color: white;
+}
